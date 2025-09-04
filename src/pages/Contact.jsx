@@ -12,6 +12,10 @@ import { RiAnticlockwiseLine, RiMapPinLine, RiTimeLine } from 'react-icons/ri'
 export default function Contact() {
   const [contactForm] = Form.useForm()
   const [country, setCountry] = useState('Nigeria')
+  const GOOGLE_MAP = import.meta.env.VITE_GOOGLE_MAP
+  const SITEKEY = import.meta.env.VITE_CAPTCHA_SITEKEY
+  
+  // console.log(SITEKEY)
 
   const handleSubmit = (values) => {
     console.log('Form values:', values)
@@ -27,7 +31,7 @@ export default function Contact() {
           <aside className="flex-1 space-y-4">
             <h3 className="text-xl md:text-2xl text-primary font-semibold">Our Office</h3>
             <div className="relative h-40 md:h-60 rounded-md bg-backdrop overflow-hidden">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15759.654522015824!2d7.4863232!3d9.071633!3m2!1i1024!2i768!4f13.1!2m1!1sniit%20abuja%20map!5e0!3m2!1sen!2sng!4v1756383794672!5m2!1sen!2sng" width="600" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src={GOOGLE_MAP} width="600" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="flex gap-4">
               <figure className="h-8 w 8 md:h-10 md:w-10 bg-backdrop rounded-full grid place-items-center text-base md:text-lg text-secondary">
@@ -110,7 +114,7 @@ export default function Contact() {
               <Form.Item name={"message"} label="Write to us" rules={[{ required: true, message: 'Message is required' }]}>
                 <TextArea placeholder='Write your message here...' rows={5} />
               </Form.Item>
-              <div className="g-recaptcha -translate-y-2" data-sitekey="6LeYva0rAAAAAHhiAf1oOKq_KtAdkr0hHBkf6vbO"></div>
+              <div className="g-recaptcha -translate-y-2" data-sitekey={SITEKEY}></div>
               <button type='submit' className="px-6 py-2 rounded-lg bg-primary text-white font-semibold w-max cursor-pointer flex items-center gap-2">Send Message</button>
             </Form>
           </aside>

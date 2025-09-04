@@ -8,13 +8,14 @@ export default function Shop() {
   const [loading, setLoading] = useState(false)
 
   const images = Object.values(ASSETS)
+  const API_URL = import.meta.env.VITE_BASE_URL
   // .filter(asset => asset.endsWith('.jpg') || asset.endsWith('.png'))
 
  const fetchCars = async () => {
     setLoading(true)
     toast.loading("Fetching cars, please wait", {id: "123"})
     try {
-      const res = await fetch('https://688cb598cd9d22dda5ce2f0d.mockapi.io/api/cars') // Replace with your API endpoint
+      const res = await fetch(API_URL) // Replace with your API endpoint
       const data = await res.json()
       setAllCars(data)
       console.log({ data })

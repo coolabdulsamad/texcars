@@ -52,30 +52,30 @@ export default function Home() {
         <img src={ASSETS['main_hero_car']} alt="" className="h-full w-full absolute object-contain object-center" />
         <div className="container mx-auto relative h-full">
           <div className="w-full max-w-lg p-4 md:p-20 flex flex-col gap-4 backdrop-blur-sm text-white">
-            <h1 className="font-serif max-w-sm text-4xl md:text-6xl">We Deliver Luxury</h1>
-            <p className="text-lg md:text-2xl leading-loose">If your idea of luxury is standing out among families and friends, you are just the perfect customer for our merchandise!</p>
+            <h1 data-aos="fade-left" className="font-serif max-w-sm text-4xl md:text-6xl">We Deliver Luxury</h1>
+            <p data-aos="fade-up" data-aos-delay="500" className="text-lg md:text-2xl leading-loose">If your idea of luxury is standing out among families and friends, you are just the perfect customer for our merchandise!</p>
           </div>
         </div>
       </section>
       <section className="relative">
         <div className="container mx-auto flex flex-col md:flex-row">
           <aside className="flex-1 relative px-4 py-10 md:px-10 md:py-20 bg-white text-primary">
-            <p className="text-sm md:text-base w-max relative before:absolute before:h-0.5 before:w-12 before:bg-secondary before:left-[120%] before:top-1/2 before:-translate-y-1/2">About </p>
-            <h3 className="text-3xl md:text-5xl font-serif">TexCars Luxury</h3>
-            <p className="max-w-sm text-justify text-base md:text-lg opacity-70 py-4">From the fine hall of luxury and palace of opulence, we bring you the very best products, ranging from antiques to latest state-of-the-art cars that announces your status without uttering a word. </p>
+            <p data-aos="fade-down" className="text-sm md:text-base w-max relative before:absolute before:h-0.5 before:w-12 before:bg-secondary before:left-[120%] before:top-1/2 before:-translate-y-1/2">About </p>
+            <h3 data-aos="zoom-out" data-aos-delay="800" className="text-3xl md:text-5xl font-serif">TexCars Luxury</h3>
+            <p data-aos="fade-up" data-aos-delay="1200" className="max-w-sm text-justify text-base md:text-lg opacity-70 py-4">From the fine hall of luxury and palace of opulence, we bring you the very best products, ranging from antiques to latest state-of-the-art cars that announces your status without uttering a word. </p>
           </aside>
           <aside className="flex-1 relative space-y-2 px-4 py-10 md:px-10 md:py-20 bg-primary text-white">
-            <h3 className="text-3xl md:text-4xl font-sans max-w-sm mb-5">Any type of query &amp; discussion</h3>
-            <p className="flex items-center gap-2 opacity-70">
+            <h3 data-aos="zoom-in-left" data-aos-delay="2000" className="text-3xl md:text-4xl font-sans max-w-sm mb-5">Any type of query &amp; discussion</h3>
+            <p data-aos="fade-up" data-aos-delay="2250" className="flex items-center gap-2 opacity-70">
               <MdOutlinePhone className="flex-shrink-0" /> Call Us:  (+1) 8023910725.
             </p>
-            <p className="flex items-center gap-2 opacity-70">
+            <p data-aos="fade-up" data-aos-delay="2500" className="flex items-center gap-2 opacity-70">
               <MdOutlineMarkEmailUnread className="flex-shrink-0" /> Send Message: query@texcars.com
             </p>
-            <p className="flex items-center gap-2 opacity-70 pt-6">
+            <p data-aos="fade-up" data-aos-delay="2750" className="flex items-center gap-2 opacity-70 pt-6">
               <FaMapMarkerAlt className="flex-shrink-0" /> Sirakoro Str., Wuse 2, Abuja, Nigeria.
             </p>
-            <Link to="/shop" className="relative h-8 w-8 before:absolute before:top-0 before:left-0 before:bg-white before:opacity-70 before:h-full before:w-full before:rounded-full block ml-auto">
+            <Link data-aos="fade-left" data-aos-delay="3000" to="/shop" className="relative h-8 w-8 before:absolute before:top-0 before:left-0 before:bg-white before:opacity-70 before:h-full before:w-full before:rounded-full block ml-auto">
               <HiArrowLongRight fontWeight={100} className="absolute z-10 right-5 top-1/2 -translate-y-1/2 font-extralight scale-x-[2] text-xl text-[#565656] opacity-70" />
             </Link>
           </aside>
