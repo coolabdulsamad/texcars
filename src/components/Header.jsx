@@ -16,6 +16,11 @@ export default function Header() {
         // This effect can be used to handle any side effects when the location changes
         // For example, you might want to scroll to the top of the page on navigation
         window.scrollTo(0, 0);
+
+        // clean up function
+        return ()  => {
+            setNavOpen(false)
+        }
     }, [location.pathname]);
 
     // console.log("Current Path:", location.pathname);

@@ -50,7 +50,7 @@ export default function Home() {
     <main className="relative">
       <section className="relative bg-gradient-to-tr from-[#161616] via-slate-600 to-[#161616] py-10 px-4 min-h-[80vh]">
         <img src={ASSETS['main_hero_car']} alt="" className="h-full w-full absolute object-contain object-center" />
-        <div className="container mx-auto relative h-full">
+        <div className="container mx-auto relative h-full pt-20 md:pt-0">
           <div className="w-full max-w-lg p-4 md:p-20 flex flex-col gap-4 backdrop-blur-sm text-white">
             <h1 data-aos="fade-left" className="font-serif max-w-sm text-4xl md:text-6xl">We Deliver Luxury</h1>
             <p data-aos="fade-up" data-aos-delay="500" className="text-lg md:text-2xl leading-loose">If your idea of luxury is standing out among families and friends, you are just the perfect customer for our merchandise!</p>
